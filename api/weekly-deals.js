@@ -7,6 +7,6 @@ export default function handler(req, res) {
 
   res.setHeader('Content-Type', 'text/html');
   res.status(200).send(
-    `<table><tr><td><h2>${greeting}This Week's Deals${countryText}</h2><p>${discount} off all items...</p></td></tr></table>`
+    `<table><tr><td><h2>${greeting}This Week's Deals for your Country - ${countryText}</h2><p>${discount} off all items...</p></td></tr></table>`
   );
 }
